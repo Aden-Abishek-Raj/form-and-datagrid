@@ -1,0 +1,29 @@
+p {
+  background-color: blue;
+  font-size: 20;
+  margin: 0;
+  color: white;
+}
+form {
+  height: 200px;
+  width: 250px;
+  border: 1px solid black;
+}
+table {
+  border-collapse: collapse;
+  border: 1px solid black;
+  margin-left: 350px;
+  margin-top: -200px;
+  width: 25%;
+}
+td,
+tr {
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+th {
+  border-collapse: collapse;
+  background-color: blue;
+  color: white;
+  border: 1px solid black;
+}

@@ -1,0 +1,22 @@
+<form>
+  <p><b>Add Salary Details</b></p>
+  <br />
+  Name<input type="text" id="name" /><br /><br />
+  Salary<input type="number" id="salary" /><br /><br />
+  <input type="button" value="Add" (click)="addDetails()" />
+  <input type="button" value="submit" (click)="onSubmit()" />
+</form>
+<table id="myTable">
+  <tr>
+    <th>Name</th>
+    <th>Salary</th>
+    <th>Link</th>
+    <th>Index</th>
+  </tr>
+  <tr *ngFor="let item of details; let i=index">
+    <td>{{item.Name}}</td>
+    <td>{{item.Salary}}</td>
+    <td><label (click)='fnDelete(i)'>Delete</label></td>
+    <td>{{i}}</td>
+  </tr>
+</table>
